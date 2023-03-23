@@ -35,16 +35,6 @@ class Utility {
     );
   }
 
-  ///Show Loader.
-  static void showLoader() async {
-    await Get.dialog(
-        Center(
-          child: Image.asset('assets/11451-car-loading.gif'),
-        ),
-        barrierColor: Colors.transparent,
-        barrierDismissible: false);
-  }
-
   ///Close any open dialogue
   static void closeDialog() {
     if (Get.isDialogOpen ?? false) Get.back<void>();

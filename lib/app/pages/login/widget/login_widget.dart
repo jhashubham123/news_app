@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:news_app/app/app.dart';
 import 'package:news_app/app/utils/utility.dart';
+import 'package:news_app/app/widget/widget.dart';
 
 class LoginWidget extends StatelessWidget {
   const LoginWidget({Key? key}) : super(key: key);
@@ -114,6 +115,15 @@ Widget socialMediaLogin({required BuildContext context}) {
             )
           ],
         ),
+        SizedBox(
+          height: Get.height * 0.05,
+        ),
+        GlobalButton(
+          text: 'Login as guest',
+          onTap: () {
+            NavigateTo.homeScreen();
+          },
+        )
       ],
     );
   });

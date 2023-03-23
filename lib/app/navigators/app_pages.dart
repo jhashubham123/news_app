@@ -24,5 +24,12 @@ class AppPages {
       binding: HomeBinding(),
       transition: pageTransition,
     ),
+    GetPage<NewsDetailView>(
+      transitionDuration: transitionDuration,
+      name: AppRoutes.newsDetailScreen,
+      page: NewsDetailView.new,
+      binding: NewsDetailBinding(),
+      transition: pageTransition,
+    ),
   ];
 }
